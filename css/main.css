@@ -1,0 +1,136 @@
+/*
+Цвет основного текста #212121, 100 %
+Вторичный стиль текста #757575
+Текст в футере rgba(255, 255, 255, 0.6)
+Белый #ffffff
+Черный #000000
+Акцент в макете #2196F3 
+
+Цвет фона вторичный #F5F4FA
+Цвет фона третий #2F303A */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --secondary-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --main-font-size: 14px;
+  --second-main-font-size: 16px;
+  --section-title-font: 36px;
+  --footer-small-text: rgba(255, 255, 255, 0.6);
+  --additional-font: 'Raleway', sans-serif;
+}
+.list {
+  list-style: none;
+}
+
+/*Hero*/
+.hero,
+.footer {
+  background-color: var(--third-background-color);
+}
+.hero-title {
+  color: var(--white-color);
+  font-size: 44px;
+  line-height: 1.36; /*60px*/
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+/*Button*/
+/*.button.primary, .button.secondary*/
+.button {
+  color: var(--title-text-color, #212121);
+  cursor: pointer;
+}
+
+.button.primary,
+.button.secondary {
+  font-size: var(--second-main-font-size);
+  text-align: center;
+}
+
+.button.primary {
+  font-weight: bold;
+  line-height: 1.87; /*30px*/
+  letter-spacing: 0.06em;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  font-weight: 500;
+  line-height: 1.62; /*26px*/
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+}
+
+.button.accent,
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/*Section*/
+.section-title {
+  color: var(--title-text-color, #212121);
+  font-weight: bold;
+  font-size: var(--section-title-font);
+  line-height: 1.17; /*42px*/
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/*Features*/
+.feature-list .title {
+  font-weight: bold;
+  line-height: 1.14; /*16px*/
+  text-transform: uppercase;
+}
+/*Team*/
+.section.team {
+  background-color: var(--secondary-background-color);
+}
+.team-list .title {
+  font-weight: 500;
+  line-height: 1.19; /*19px*/
+  text-align: center;
+}
+
+/*Gallery*/
+.gallery-list .title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2; /*36px*/
+  letter-spacing: 0.06em;
+}
+/*Titles*/
+.feature-list .title,
+.team-list .title {
+  color: var(--title-text-color, #212121);
+  letter-spacing: 0.03em;
+}
+
+/*Paragraphs*/
+.feature-list .text,
+.team-list .text,
+.gallery-list .text {
+  letter-spacing: 0.03em;
+}
+.feature-list .text {
+  line-height: 1.71; /*24px*/
+}
+
+.team-list .text {
+  font-size: var(--second-main-font-size);
+  line-height: 1.19; /*19px*/
+  text-align: center;
+}
+.gallery-list .text {
+  font-size: var(--second-main-font-size);
+  line-height: 1.87; /*30px*/
+}
