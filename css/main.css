@@ -309,7 +309,7 @@ address {
 
 /*Gallery
 ================== */
-.section {
+.section.gallery {
   padding: 100px 0 94px;
 }
 
